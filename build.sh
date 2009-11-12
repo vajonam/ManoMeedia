@@ -170,6 +170,10 @@ rm -f $DIRNAME/media/textures.xbt
 rm -f $DIRNAME/media/lite.xbt
 echo "done."
 
+cd $DIRNAME/BUILD
+tar vzcf $SKINNAME\ $VERSION.tar.gz $SKINNAME
+cd $DINAME
+
 echo "======================================================================"
 echo ""
 echo "Build Complete - Scroll up to check for errors."
