@@ -135,7 +135,7 @@ cp -r $DIRNAME/*.xml $DIRNAME/BUILD/$SKINNAME/. 2>/dev/null
 cp -r $DIRNAME/*.txt $DIRNAME/BUILD/$SKINNAME/. 2>/dev/null
 mkdir $DIRNAME/BUILD/$SKINNAME/media
 cp -r $DIRNAME/media/*.xbt $DIRNAME/BUILD/$SKINNAME/media/. 2>/dev/null
-find $DIRNAME/BUILD/$SKINNAME -name .svn -print0 | xargs -0 rm -r
+rm find $DIRNAME/BUILD/$SKINNAME -name .svn -print0 | xargs -0 rm -r
 echo "done."
 
 ## Create revision include file

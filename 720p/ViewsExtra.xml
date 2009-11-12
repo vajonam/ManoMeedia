@@ -46,6 +46,7 @@
               <posy>0</posy>
               <width>68</width>
               <height>180</height>
+	      <texture background="true"/>
               <info>ListItem(-2).Icon</info>
               <include>ListViewThumb</include>
               <animation effect="zoom" time="300" start="0,0,68,180" end="8,-36,90,252">Hidden</animation>
@@ -58,6 +59,7 @@
               <width>90</width>
               <height>180</height>
               <info>ListItem(-1).Icon</info>
+	      <texture background="true"/>
               <include>ListViewThumb</include>
               <animation effect="zoom" time="300" start="0,0,90,180" end="23,-22,109,224">Hidden</animation>
               <visible>Container.OnPrevious</visible>
@@ -69,6 +71,7 @@
               <width>109</width>
               <height>180</height>
               <info>ListItem(2).Icon</info>
+	      <texture background="true"/>
               <include>ListViewThumb</include>
               <animation effect="zoom" time="300" start="0,0,109,180" end="117,18,90,146">Hidden</animation>
               <visible>Container.OnPrevious</visible>
@@ -81,6 +84,7 @@
               <height>180</height>
               <colordiffuse></colordiffuse>
               <info>ListItem(1).Icon</info>
+	      <texture background="true"/>
               <include>ListViewThumb</include>
               <animation effect="zoom" time="300" start="0,0,128,180" end="112,15,109,150">Hidden</animation>
               <visible>Container.OnPrevious</visible>
@@ -92,6 +96,7 @@
               <width>109</width>
               <height>180</height>
               <include>ListViewThumb</include>
+	      <texture background="true"/>
               <animation effect="zoom" time="300" start="0,0,109,180" end="44,-16,128,212">Hidden</animation>
               <visible>Container.OnPrevious</visible>
             </control>
@@ -128,6 +133,7 @@
               <height>180</height>
               <info>ListItem(-2).Icon</info>
               <include>ListViewThumb</include>
+	      <texture background="true"/>
               <animation effect="zoom" time="300" start="0,0,109,180" end="-7,20,83,142">Hidden</animation>
               <visible>Container.OnNext</visible>
             </control>
@@ -140,6 +146,7 @@
               <colordiffuse></colordiffuse>
               <info>ListItem(-1).Icon</info>
               <include>ListViewThumb</include>
+	      <texture background="true"/>
               <animation effect="zoom" time="300" start="0,0,128,180" end="-28,13,105,155">Hidden</animation>
               <visible>Container.OnNext</visible>
             </control>
@@ -151,6 +158,7 @@
               <height>180</height>
               <info>ListItem(2).Icon</info>
               <include>ListViewThumb</include>
+	      <texture background="true"/>
               <animation effect="zoom" time="300" start="0,0,68,180" end="-248,-34,95,250">Hidden</animation>
               <visible>Container.OnNext</visible>
             </control>
@@ -162,6 +170,7 @@
               <height>180</height>
               <info>ListItem(1).Icon</info>
               <include>ListViewThumb</include>
+	      <texture background="true"/>
               <animation effect="zoom" time="300" start="0,0,90,180" end="-157,-20,112,220">Hidden</animation>
               <visible>Container.OnNext</visible>
             </control>
@@ -173,6 +182,7 @@
               <height>180</height>
               <include>ListViewThumb</include>
               <animation effect="zoom" time="300" start="0,0,109,180" end="-140,-14,130,212">Hidden</animation>
+	      <texture background="true"/>
               <visible>Container.OnNext</visible>
             </control>
 
@@ -207,6 +217,7 @@
               <width>90</width>
               <height>180</height>
               <info>ListItem(-2).Icon</info>
+	      <texture background="true"/>
               <include>ListViewThumb</include>
             </control>
 
@@ -216,6 +227,7 @@
               <width>109</width>
               <height>180</height>
               <info>ListItem(-1).Icon</info>
+	      <texture background="true"/>
               <include>ListViewThumb</include>
             </control>
 
@@ -226,6 +238,7 @@
               <height>180</height>
               <info>ListItem(2).Icon</info>
               <include>ListViewThumb</include>
+	      <texture background="true"/>
             </control>
 
             <control type="image">
@@ -235,6 +248,7 @@
               <height>180</height>
               <info>ListItem(1).Icon</info>
               <include>ListViewThumb</include>
+	      <texture background="true"/>
             </control>
 
             <control type="image">
