@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Language file translated with Team XBMC Translator-->
+<!--Translator: blittan-->
+<!--Email: blittan@xbmc.org-->
+<!--Date of translation: 07/27/2009-->
+<!--$Revision$-->
+<!--Based on english strings version 204-->
+<strings>
+  <string id="31000">Filhanterare</string>
+  <string id="31001">Info</string>
+  <string id="31002">Återställ</string>
+  <string id="31003">Analysera</string>
+  <string id="31004">Ändra</string>
+  <string id="31005">Diverse</string>
+  <string id="31006">Visuell</string>
+  <string id="31007">Av/På</string>
+  <string id="31008">Ej betygssatt</string>
+  <string id="31009">Se dina</string> <!-- used for Movies -->
+  <string id="31010">Se dina</string> <!-- used for TV Shows -->
+  <string id="31011">Se dina</string> <!-- used for Videos -->
+  <string id="31012">Lyssna på</string>
+  <string id="31013">Se dina</string>
+  <string id="31014">Använd dina</string>
+  <string id="31015">Kontrollera</string>
+  <string id="31016">Konfigurera</string>
+  <string id="31017">Ström</string>
+  <string id="31018">Grundläggande info</string>
+  <string id="31019">Spela</string>
+  <string id="31020">Kontrollera</string>
+  <string id="31021">Av</string>
+  <string id="31022">Nyligen tillagt</string>
+  <string id="31023">Senaste</string>
+  <string id="31024">Sida</string>
+  <string id="31025">Objekt</string>
+
+  <!-- Options Menu -->
+  <string id="31100">Affishinfo</string>
+  <string id="31101">Ordna efter</string>
+  <string id="31102">Inställningar</string>
+  <string id="31103">Utställning</string>
+  <string id="31104">Visa större klocka</string>
+  <string id="31105">Vattenfall</string>
+  <string id="31106">Ställa ut</string>
+  <string id="31107">Låg lista</string>
+  <string id="31108">Exponering</string>
+  <string id="31109">Hög lista</string>
+
+  <!-- Settings -->
+  <string id="31200">Visa handling</string>
+  <string id="31201">Senast uppdaterad</string>
+  <string id="31202">Bakgrundsmapp</string>
+  <string id="31203">Bakgrunder</string>
+  <string id="31204">Inställningsmeny</string>
+  <string id="31205">Göm</string>
+  <string id="31206">Klocka</string>
+  <string id="31207">Göm väderprognos i huvudmenyn</string>
+  <string id="31208">Inaktivera</string>
+  <string id="31209">Konfigurera inställning för</string>
+  <string id="31210">Meny</string>
+  <string id="31211">Göm handling i OSD</string>
+  <string id="31212">Göm sedd överlägg</string>
+  <string id="31213">Göm miniatyr</string>
+  <string id="31214">Visa granskning</string>
+  <string id="31215">Visa innehållstyp</string>
+  <string id="31216">Göm mediaräkning</string>
+  <string id="31217">Visa porträttminiatyrer för TV</string>
+  <string id="31218">Visa minimal video OSD</string>
+  <string id="31219">Göm vitt brus BG</string>
+  <string id="31220">Använd animerade väderminiatyrer</string>
+  <string id="31221">D�lj senaste filmerna</string>
+
+  <!-- Video -->
+  <string id="31300">Ej tillgänglig</string>
+  <string id="31301">Miniatyr</string>
+  <string id="31302">Fankonst</string>
+  <string id="31303">Säsonger</string>
+  <string id="31304">Uppskattad sluttid</string>
+
+  <!-- Music -->
+  <string id="31400">Avslutad</string>
+  <string id="31401">Nuvarande</string>
+  <string id="31402">Välj visualisering</string>
+  <string id="31403">Visualiseringsförval</string>
+  <string id="31404">Visualiseringsinställningar</string>
+  <string id="31405">Texter</string>
+  <string id="31406">Ange textsökväg</string>
+  <string id="31407">�ppna spellista</string>
+  <string id="31408">Spara spellista</string>
+  <string id="31409">St�ng spellista</string>
+  <string id="31410">Systemets musikfiler</string>
+  <string id="31411">Nuvarande spellista</string>
+
+  <!-- Dialogs -->
+  <string id="31500">Välj profil</string>
+  <string id="31501">Dämpad</string>
+  <string id="31502">Skapa</string>
+  <string id="31503">Avkodare</string>
+
+</strings>
