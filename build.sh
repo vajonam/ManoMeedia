@@ -145,7 +145,9 @@ then
 	echo "<!-- $SKINNAME skin revision: ${REVISION} - built with build.sh version 0.1 -->" > $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
 	echo "<includes>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
 	echo "<include name=\"Revision\">" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
-	echo "<label>$SKINNAME ${VERSION}, SVN - r${REVISION}</label>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
+ 	# dont use svn any more git's version is way cooler	
+	# echo "<label>$SKINNAME ${VERSION}, SVN - r${REVISION}</label>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
+	echo "<label>$SKINNAME ${VERSION}</label>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
 	echo "</include>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
 	echo "</includes>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
 	echo "done."
