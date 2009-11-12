@@ -171,7 +171,7 @@ rm -f $DIRNAME/media/lite.xbt
 echo "done."
 
 cd $DIRNAME/BUILD
-tar vzcf $SKINNAME\ $VERSION.tar.gz $SKINNAME
+tar zcf $SKINNAME\ $VERSION.tar.gz $SKINNAME
 cd $DINAME
 
 echo "======================================================================"
