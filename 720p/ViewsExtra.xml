@@ -358,6 +358,7 @@
           <ondown>68</ondown>
           <pagecontrol>68</pagecontrol>
           <orientation>horizontal</orientation>
+
           <itemlayout width="120" height="120">
           </itemlayout>
           <focusedlayout width="120" height="120">
@@ -394,14 +395,16 @@
                 <height>300</height>
                 <info>ListItem(-4).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-4).Icon</info>
                 <include>ListViewThumb</include>
+	
               </control>
             </control>
  
@@ -413,12 +416,13 @@
                 <height>300</height>
                 <info>ListItem(-3).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-3).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -431,15 +435,16 @@
                 <width>225</width>
                 <height>300</height>
                 <info>ListItem(-2).Icon</info>
+		<texture background="true" />
                 <include>ListViewThumb</include>
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-2).Icon</info>
-                <include>ListViewThumb</include>
+		<include>ListViewThumb</include>
               </control>
             </control>
 
@@ -450,14 +455,16 @@
                 <width>225</width>
                 <height>300</height>
                 <info>ListItem(-1).Icon</info>
+		<texture background="true" />
                 <include>ListViewThumb</include>
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-1).Icon</info>
+		<texture background="true" />
                 <include>ListViewThumb</include>
               </control>
             </control>
@@ -473,13 +480,14 @@
               <control type="image">
                 <width>225</width>
                 <height>300</height>
+		<texture background="true" />
                 <include>ListViewThumb</include>
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture background="true" flipy="true" diffuse="diffuse_mirror2.png" /> 
                 <include>ListViewThumb</include>
               </control>
             </control>
@@ -494,12 +502,13 @@
                 <height>300</height>
                 <info>ListItem(5).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(5).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -512,13 +521,14 @@
                 <width>225</width>
                 <height>300</height>
                 <info>ListItem(4).Icon</info>
+		<texture background="true" />
                 <include>ListViewThumb</include>
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(4).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -531,13 +541,14 @@
                 <width>225</width>
                 <height>300</height>
                 <info>ListItem(3).Icon</info>
+		<texture background="true" />
                 <include>ListViewThumb</include>
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(3).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -551,12 +562,13 @@
                 <height>300</height>
                 <info>ListItem(2).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(2).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -580,7 +592,7 @@
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" />
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" />
                 <info>ListItem(1).Icon</info> 
                 <include>ListViewThumb</include>
               </control>
@@ -603,12 +615,13 @@
                 <height>300</height>
                 <info>ListItem(-5).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-5).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -622,12 +635,13 @@
                 <height>300</height>
                 <info>ListItem(-4).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-4).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -641,12 +655,13 @@
                 <height>300</height>
                 <info>ListItem(-3).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-3).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -660,12 +675,13 @@
                 <height>300</height>
                 <info>ListItem(-2).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" />
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" />
                 <info>ListItem(-2).Icon</info> 
                 <include>ListViewThumb</include>
               </control>
@@ -684,12 +700,13 @@
                 <height>300</height>
                 <info>ListItem(-1).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" />
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" />
                 <info>ListItem(-1).Icon</info> 
                 <include>ListViewThumb</include>
               </control>
@@ -705,12 +722,13 @@
                 <height>300</height>
                 <info>ListItem(4).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(4).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -724,12 +742,13 @@
                 <height>300</height>
                 <info>ListItem(3).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(3).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -743,12 +762,13 @@
                 <height>300</height>
                 <info>ListItem(2).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(2).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -762,12 +782,13 @@
                 <height>300</height>
                 <info>ListItem(1).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(1).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -807,13 +828,14 @@
                 <width>225</width>
                 <height>300</height>
                 <info>ListItem(-4).Icon</info>
+		<texture background="true" />
                 <include>ListViewThumb</include>
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-4).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -827,12 +849,13 @@
                 <height>300</height>
                 <info>ListItem(-3).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-3).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -846,12 +869,13 @@
                 <height>300</height>
                 <info>ListItem(-2).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-2).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -865,12 +889,13 @@
                 <height>300</height>
                 <info>ListItem(-1).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(-1).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -884,12 +909,13 @@
                 <height>300</height>
                 <info>ListItem(4).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(4).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -903,12 +929,13 @@
                 <height>300</height>
                 <info>ListItem(3).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(3).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -922,12 +949,13 @@
                 <height>300</height>
                 <info>ListItem(2).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(2).Icon</info>
                 <include>ListViewThumb</include>
               </control>
@@ -941,12 +969,13 @@
                 <height>300</height>
                 <info>ListItem(1).Icon</info>
                 <include>ListViewThumb</include>
+		<texture background="true" />
               </control>
               <control type="image">
                 <posy>300</posy>
                 <width>225</width>
                 <height>300</height>
-                <texture flipy="true" diffuse="diffuse_mirror2.png" /> 
+                <texture flipy="true"  background="true" diffuse="diffuse_mirror2.png" /> 
                 <info>ListItem(1).Icon</info>
                 <include>ListViewThumb</include>
               </control>
