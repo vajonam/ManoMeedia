@@ -36,19 +36,19 @@
   <actions>
     <action>
       <name>left</name>
-      <file>Left.wav</file>
+      <file>left.wav</file>
     </action>
     <action>
       <name>right</name>
-      <file>Right.wav</file>
+      <file>right.wav</file>
     </action>
     <action>
       <name>up</name>
-      <file>Up.wav</file>
+      <file>up.wav</file>
     </action>
     <action>
       <name>down</name>
-      <file>Down.wav</file>
+      <file>down.wav</file>
     </action>
     <action>
       <name>select</name>
