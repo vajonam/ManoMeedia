@@ -491,7 +491,7 @@
             <description>Sort by Name button</description>
             <visible>!Container.Content(albums)</visible>
             <label>551</label>
-            <onclick>Container.SetSortMethod(1)</onclick>
+            <onclick>Container.SetSortMethod(23)</onclick>
             <include>OMButtonItem</include>
           </control>
   

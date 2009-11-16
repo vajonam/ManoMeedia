@@ -93,7 +93,7 @@
   </default>
 
   <default type="multiimage">
-    <timeperimage>10000</timeperimage>
+    <timeperimage>60000</timeperimage>
     <fadetime>800</fadetime>
     <randomize>true</randomize>
   </default>
