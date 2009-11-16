@@ -46,6 +46,21 @@ function get_tag()
 	VALUE=`$EGREP "<$1>.*</$1>" skin.xml | $SED "s/<$1>//" | $SED "s/<\/$1>//" | $SED "s/\r//" | $AWK '{print $1}'`
 }
 
+function get_build()
+{
+BUILDNO=`cat $DIRNAME/buildnumber`
+}
+
+function increment_build()
+{
+BUILDNO=`expr $BUILDNO + 1`
+}
+function set_build()
+{
+echo $BUILDNO > $DIRNAME/buildnumber
+}
+
+
 DIRNAME=`dirname $0`
 
 echo "======================================================================"
@@ -138,6 +153,10 @@ cp -r $DIRNAME/media/*.xbt $DIRNAME/BUILD/$SKINNAME/media/. 2>/dev/null
 rm find $DIRNAME/BUILD/$SKINNAME -name .svn -print0 | xargs -0 rm -r
 echo "done."
 
+get_build
+increment_build
+set_build
+
 ## Create revision include file
 if [ ! -z "$DEFAULTRES" ];
 then
@@ -147,7 +166,7 @@ then
 	echo "<include name=\"Revision\">" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
  	# dont use svn any more git's version is way cooler	
 	# echo "<label>$SKINNAME ${VERSION}, SVN - r${REVISION}</label>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
-	echo "<label>$SKINNAME ${VERSION}</label>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
+	echo "<label>$SKINNAME ${VERSION}.${BUILDNO} </label>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
 	echo "</include>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
 	echo "</includes>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
 	echo "done."
@@ -161,7 +180,7 @@ then
 	echo "<include name=\"Revision\">" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRESWIDE}/revision.xml
  	# dont use svn any more git's version is way cooler	
 	# echo "<label>$SKINNAME ${VERSION}, SVN - r${REVISION}</label>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
-	echo "<label>$SKINNAME ${VERSION}</label>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
+	echo "<label>$SKINNAME ${VERSION}.${BUILDNO} </label>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRES}/revision.xml
 	echo "</include>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRESWIDE}/revision.xml
 	echo "</includes>" >> $DIRNAME/BUILD/$SKINNAME/${DEFAULTRESWIDE}/revision.xml
 	echo "done."
