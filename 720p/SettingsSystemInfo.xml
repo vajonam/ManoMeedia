@@ -26,21 +26,21 @@
             <description>Hardware</description>
             <label>13281</label>
             <label2>$LOCALIZE[31003]</label2>
-            <onclick>SendClick(7,98)</onclick>
+            <onclick>SetFocus(98)</onclick>
           </item>
 
           <item id="100">
             <description>Basic Info</description>
             <label>31018</label>
             <label2>$LOCALIZE[31003]</label2>
-            <onclick>SendClick(7,95)</onclick>
+            <onclick>SetFocus(95)</onclick>
           </item>
 
           <item id="101">
             <description>Storage</description>
             <label>13277</label>
             <label2>$LOCALIZE[31003]</label2>
-            <onclick>SendClick(7,94)</onclick>
+            <onclick>SetFocus(94)</onclick>
           </item>
 
           <item id="102">
@@ -48,7 +48,7 @@
             <label>13275</label>
             <label2>$LOCALIZE[31003]</label2>
             <visible>System.Platform.Xbox</visible>
-            <onclick>SendClick(7,92)</onclick>
+            <onclick>SetFocus(92)</onclick>
           </item>
 
           <item id="103">
@@ -56,21 +56,21 @@
             <label>13276</label>
             <label2>$LOCALIZE[31003]</label2>
             <visible>System.Platform.Xbox</visible>
-            <onclick>SendClick(7,93)</onclick>
+            <onclick>SetFocus(93)</onclick>
           </item>
 
           <item id="104">
             <description>Network</description>
             <label>13279</label>
             <label2>$LOCALIZE[31003]</label2>
-            <onclick>SendClick(7,96)</onclick>
+            <onclick>SetFocus(96)</onclick>
           </item>
 
           <item id="105">
             <description>Video</description>
             <label>13280</label>
             <label2>$LOCALIZE[31003]</label2>
-            <onclick>SendClick(7,97)</onclick>
+            <onclick>SetFocus(97)</onclick>
           </item>
         </content>
       </control>

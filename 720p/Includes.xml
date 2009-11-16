@@ -3138,6 +3138,7 @@
     <info>-</info>
     <texturefocus>-</texturefocus>
     <texturenofocus>-</texturenofocus>
+	<onfocus>SetFocus(9000)</onfocus>
     <include>HomeMainMenuMainLabel</include>
   </include>
 
