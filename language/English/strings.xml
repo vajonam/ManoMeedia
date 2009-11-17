@@ -73,6 +73,8 @@
   <string id="31222">Animated</string>
   <string id="31223">List Item</string>
   <string id="31224">Use Feels Like instead of Temperature</string>
+  <string id="31225">Set TWC Supplemental Script Path</string>
+  <string id="31226">Hide Visualisation</string>
 
   <!-- Video -->
   <string id="31300">N/A</string>
@@ -81,6 +83,7 @@
   <string id="31303">Seasons</string>
   <string id="31304">Approx Finish Time</string>
   <string id="31305">Press Right[CR]For Trailer</string>
+  <string id="31306">Set Opensubtitles-OSD Script Path</string>
 
   <!-- Music -->
   <string id="31400">Ended</string>

@@ -811,20 +811,21 @@
           </control>
 
           <control type="image">
-            <description>Watched Overlay</description>
-            <posx>0</posx>
-            <posy>28</posy>
-            <include>WatchedOverlay</include>
-          </control>
-
-          <control type="image">
             <description>Star Rating</description>
-            <posx>30</posx>
+            <posx>0</posx>
             <posy>20</posy>
             <width>64</width>
             <aspectratio>keep</aspectratio>
             <align>right</align>
             <info>ListItem.StarRating</info>
+            <texture flipx="true" />
+          </control>
+
+          <control type="image">
+            <description>Watched Overlay</description>
+            <posx>80</posx>
+            <posy>28</posy>
+            <include>WatchedOverlay</include>
           </control>
 
           <control type="group">

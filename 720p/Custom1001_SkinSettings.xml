@@ -293,17 +293,21 @@
             <include>SettingsOptionRadioButton</include>
           </control>
 
-
           <control type="radiobutton" id="4">
-            <description>Use Feels like for Temp</description>
+            <description>Hide Visualisation</description>
+            <label>$LOCALIZE[31226]</label>
+            <onclick>Skin.ToggleSetting(HideVisualisation)</onclick>
+            <selected>Skin.HasSetting(HideVisualisation)</selected>
+            <include>SettingsOptionRadioButton</include>
+          </control>
+
+          <control type="radiobutton" id="5">
+           <description>Use Feels like for Temp</description>
             <label>$LOCALIZE[31224]</label>
             <onclick>Skin.ToggleSetting(UseFeelsLikeTemp)</onclick>
             <selected>Skin.HasSetting(UseFeelsLikeTemp)</selected>
             <include>SettingsOptionRadioButton</include>
           </control>
-
-
-
 
           <control type="radiobutton" id="20">
             <description>Disable Videos Menu</description>
@@ -427,6 +431,14 @@
             <usealttexture>Skin.String(CustomVideosBGFolder)</usealttexture>
             <include>SettingsOptionRadioButton</include>
           </control>
+
+          <control type="button" id="5">
+  	    <description>Set OpenSubtitles-OSD script Path</description>
+  	    <label>$LOCALIZE[31306]</label>
+  	    <onclick>Skin.SetFile(SubScriptPath,.py)</onclick>
+            <include>SettingsOptionRadioButton</include>
+  	  </control>
+
         </control>
 
         <!-- TV Shows Options -->
@@ -517,12 +529,13 @@
             <include>SettingsOptionRadioButton</include>
           </control>
 
-  				<control type="button" id="402">
-  				  <description>Set Lyrics Path</description>
-  					<label>31406</label>
-  					<onclick>Skin.SetFile(LyricScriptPath,.py)</onclick>
+  	  <control type="button" id="402">
+  	    <description>Set Lyrics Path</description>
+  	    <label>31406</label>
+  	    <onclick>Skin.SetFile(LyricScriptPath,.py)</onclick>
             <include>SettingsOptionRadioButton</include>
-  				</control>
+  	  </control>
+
         </control>
 
         <!-- Pictures Options -->
@@ -634,6 +647,14 @@
             <selected>Skin.HasSetting(UseAnimatedWeather)</selected>
             <include>SettingsOptionRadioButton</include>
           </control>
+
+  	  <control type="button" id="3">
+  	    <description>Set TWC Script Path</description>
+  	    <label>$LOCALIZE[31225]</label>
+  	    <onclick>Skin.SetFile(TWCScriptPath,.py)</onclick>
+            <include>SettingsOptionRadioButton</include>
+  	  </control>
+
         </control>
 
         <control type="scrollbar" id="61">

@@ -855,8 +855,8 @@
     <textcolor>Selected</textcolor>
     <align>left</align>
     <aligny>center</aligny>
-  <label>$INFO[Window(Weather).Property(Current.FeelsLike)] $INFO[System.TemperatureUnits]</label>
- </include>
+    <label>$INFO[Window(Weather).Property(Current.FeelsLike)] $INFO[System.TemperatureUnits]</label>
+  </include>
 
   <include name="LatestMediaBG">
     <control type="image">
@@ -1112,6 +1112,16 @@
         <include>MusicNowPlayingText</include>
       </control>
 
+      <control type="image">
+        <description>Star Rating</description>
+        <posx>140</posx>
+        <posy>58</posy>
+        <width>64</width>
+        <aspectratio>keep</aspectratio>
+        <align>left</align>
+        <info>Player.StarRating</info>
+      </control>
+
       <control type="label">
         <description>time</description>
         <posy>62</posy>
@@ -1210,7 +1220,6 @@
           </control>
         </control>
       </control>
- 
 
       <control type="image">
 	<description>cdArt</description>
@@ -1239,7 +1248,6 @@
         <bordersize>8</bordersize>
         <info>MusicPlayer.Cover</info>
       </control>
-
 
     </control>
   </include>

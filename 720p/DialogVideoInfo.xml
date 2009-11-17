@@ -22,12 +22,12 @@
         <include>OverlayArea</include>
       </control>
 
-      <control type="grouplist" id="1">
+      <control type="grouplist">
         <posx>6</posx>
         <posy>12</posy>
         <orientation>horizontal</orientation>
         <itemgap>6</itemgap>
-        <ondown>48</ondown>
+        <ondown>49</ondown>
 
         <control type="button" id="5">
           <description>Plot/Cast</description>
@@ -101,15 +101,6 @@
             <visible>[Container.Content(tvshows) + !Skin.HasSetting(UsePortraitTVThumbs)]</visible>
           </control>
 
-          <control type="button" id="48">
-            <label>-</label>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <onclick>-</onclick>
-            <onfocus>SetFocus(50)</onfocus>
-            <visible>Control.IsVisible(50)</visible>
-          </control>
-
           <control type="list" id="50">
             <description>Cast</description>
             <width>345</width>
@@ -144,6 +135,7 @@
 
           <control type="image">
             <posx>345</posx>
+            <posy>-10</posy>
             <width>210</width>
             <height>178</height>
             <aspectratio align="right" aligny="center">keep</aspectratio>
@@ -154,7 +146,6 @@
             <visible>Control.IsVisible(50)</visible>
           </control>
         </control>
-
         <control type="group">
           <posx>750</posx>
 
@@ -208,7 +199,7 @@
 
           <control type="button" id="47">
             <onright>48</onright>
-            <onup>1</onup>
+            <onup>5</onup>
             <ondown>47</ondown>
             <label>-</label>
             <texturefocus>-</texturefocus>
@@ -227,7 +218,7 @@
             <control type="button" id="48">
               <onleft>47</onleft>
               <onright>49</onright>
-              <onup>1</onup>
+              <onup>5</onup>
               <ondown>48</ondown>
               <label>-</label>
               <texturefocus>-</texturefocus>
@@ -296,7 +287,7 @@
             <control type="button" id="49">
               <onleft>48</onleft>
               <onright>49</onright>
-              <onup>1</onup>
+              <onup>5</onup>
               <label>-</label>
               <texturefocus>-</texturefocus>
               <texturenofocus>-</texturenofocus>
