@@ -357,13 +357,13 @@
 
   <include name="SortLetter">
     <control type="group">
-      <posx>680</posx>
-      <posy>660</posy>
+      <posx>700</posx>
+      <posy>630</posy>
       <visible>Container.Scrolling</visible>
       <animation effect="slide" time="0" start="0,0" end="320,0" condition="Control.IsVisible(52)">Conditional</animation>
       <animation effect="slide" time="0" start="0,0" end="0,-43" condition="[Control.IsVisible(50) | Control.IsVisible(51)] + !Skin.HasSetting(HideMediaCount)">Conditional</animation>
-      <animation effect="slide" time="300" tween="circle" easing="out" start="0,120" end="0,0">Visible</animation>
-      <animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="0,120">Hidden</animation>
+      <animation effect="slide" time="300" tween="circle" easing="out" start="0,140" end="0,0">Visible</animation>
+      <animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="0,140">Hidden</animation>
 
       <control type="image">
         <description>Panel background</description>
