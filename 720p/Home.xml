@@ -617,14 +617,6 @@
             <visible>!Skin.HasSetting(HideMusic)</visible>
             <onclick>XBMC.ActivateWindow(5)</onclick>
           </item>
-          <item id="9">
-            <description>My Movies Button</description>
-            <label>$LOCALIZE[342]</label>
-            <label2>$LOCALIZE[31009]</label2>
-            <thumb>$INFO[Skin.String(CustomMoviesBGFolder)]</thumb>
-            <onclick>SetFocus(301)</onclick>
-            <visible>!Skin.HasSetting(HideMovies)</visible>
-          </item>
           <item id="8">
             <description>My TV Shows Button</description>
             <label>$LOCALIZE[20343]</label>
@@ -632,6 +624,14 @@
             <thumb>$INFO[Skin.String(CustomTVShowsBGFolder)]</thumb>
             <onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
             <visible>!Skin.HasSetting(HideTVShows)</visible>
+          </item>
+          <item id="9">
+            <description>My Movies Button</description>
+            <label>$LOCALIZE[342]</label>
+            <label2>$LOCALIZE[31009]</label2>
+            <thumb>$INFO[Skin.String(CustomMoviesBGFolder)]</thumb>
+            <onclick>SetFocus(301)</onclick>
+            <visible>!Skin.HasSetting(HideMovies)</visible>
           </item>
           <item id="3">
             <description>My Pics Button</description>
