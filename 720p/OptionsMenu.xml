@@ -489,7 +489,7 @@
 
           <control type="button" id="970">
             <description>Sort by Name button</description>
-            <visible>!Container.Content(albums) + !Container.Content(movies) </visible>
+            <visible>!Container.Content(albums) + !Container.Content(movies) + !Container.Content(videos) </visible>
             <label>551</label>
             <onclick>Container.SetSortMethod(2)</onclick>
             <include>OMButtonItem</include>
@@ -497,7 +497,7 @@
 
           <control type="button" id="996">
             <description>Sort by Name button</description>
-            <visible>Container.Content(movies)</visible>
+            <visible>Container.Content(movies) | Container.Content(videos) </visible>
             <label>551</label>
             <onclick>Container.SetSortMethod(23)</onclick>
             <include>OMButtonItem</include>
