@@ -34,7 +34,8 @@ class Main:
 	for count, row in enumerate( myfile ):
             # set properties
 	    count = count + 1
-            self.WINDOW.setProperty( "XspLauncher.%d.StringId" % ( count ), row[ 0 ] )
+	    localizedString = xbmc.getLocalizedString( row[ 0 ] )
+            self.WINDOW.setProperty( "XspLauncher.%d.StringId" % ( count ), localizedString )
             self.WINDOW.setProperty( "XspLauncher.%d.XspPath" % ( count ), row[ 1 ] )
 
 if ( __name__ == "__main__" ):
