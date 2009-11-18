@@ -154,7 +154,9 @@ rm find $DIRNAME/BUILD/$SKINNAME -name .svn -print0 | xargs -0 rm -r
 echo "done."
 
 get_build
-increment_build
+if [ $1 == '-i' ]; then
+	increment_build
+fi
 set_build
 
 ## Create revision include file

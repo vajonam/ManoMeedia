@@ -168,19 +168,22 @@
             </item>
 -->
             <item id="3">
-              <description>English</description>
-              <label> English </label>
-         <onclick>XBMC.ActivateWindow(25,special://profile/playlists/video/eng.xsp,return)</onclick>
+              	<description>English</description>
+              	<label>$INFO[Window.Property(XspLauncher.1.StringId)]</label>
+         	<onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.1.XspPath)],return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.1.StringId))</visible>
 	  </item>
             <item id="4">
               <description>Tamil</description>
-              <label> Tamil </label>
-         <onclick>XBMC.ActivateWindow(25,special://profile/playlists/video/tam.xsp,return)</onclick>
+              	<label>$INFO[Window.Property(XspLauncher.2.StringId)]</label>
+         	<onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.2.XspPath)],return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.2.StringId))</visible>
             </item>
             <item id="5">
               <description>Hindi</description>
-              <label> Hindi </label>
-         <onclick>XBMC.ActivateWindow(25,special://profile/playlists/video/hin.xsp,return)</onclick>
+              	<label>$INFO[Window.Property(XspLauncher.3.StringId)]</label>
+               <onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.3.XspPath)],return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.3.StringId))</visible>
             </item>
           <item id="6">
             <description>Update library</description>
@@ -188,31 +191,36 @@
             <onclick>UpdateLibrary(video)</onclick>
           </item>
 
-            <!-- item id="2">
+            <item id="2">
               <description>By Genre</description>
               <label>$LOCALIZE[31021] $LOCALIZE[515]</label>
               <onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres,return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + IsEmpty(Window.Property(XspLauncher.1.StringId))</visible>
             </item>
             <item id="3">
               <description>By Year</description>
               <label>$LOCALIZE[31021] $LOCALIZE[345]</label>
               <onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears,return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + IsEmpty(Window.Property(XspLauncher.1.StringId))</visible>
             </item>
             <item id="4">
               <description>By Actor</description>
               <label>$LOCALIZE[31021] $LOCALIZE[20337]</label>
               <onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors,return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + IsEmpty(Window.Property(XspLauncher.1.StringId))</visible>
             </item>
             <item id="5">
               <description>By Director</description>
               <label>$LOCALIZE[31021] $LOCALIZE[20339]</label>
               <onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors,return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + IsEmpty(Window.Property(XspLauncher.1.StringId))</visible>
             </item>
             <item id="6">
               <description>By Studio</description>
               <label>$LOCALIZE[31021] $LOCALIZE[572]</label>
               <onclick>XBMC.ActivateWindow(MyVideoLibrary,moviestudios,return)</onclick>
-            </item -->
+	       <visible>!Skin.HasSetting(HideMovies) + IsEmpty(Window.Property(XspLauncher.1.StringId))</visible>
+            </item>
             <item id="8">
               <description>Video Plugins</description>
               <label>$LOCALIZE[1037]</label>
@@ -631,7 +639,15 @@
             <label2>$LOCALIZE[31009]</label2>
             <thumb>$INFO[Skin.String(CustomMoviesBGFolder)]</thumb>
             <onclick>SetFocus(301)</onclick>
-            <visible>!Skin.HasSetting(HideMovies)</visible>
+            <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.1.StringId))</visible>
+          </item>
+          <item id="9">
+            <description>My Movies Button</description>
+            <label>$LOCALIZE[342]</label>
+            <label2>$LOCALIZE[31009]</label2>
+            <thumb>$INFO[Skin.String(CustomMoviesBGFolder)]</thumb>
+            <onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+            <visible>!Skin.HasSetting(HideMovies) + IsEmpty(Window.Property(XspLauncher.1.StringId))</visible>
           </item>
           <item id="3">
             <description>My Pics Button</description>
@@ -727,6 +743,7 @@
       <label>-</label>
       <font>-</font>
       <onfocus>RunScript(special://skin/scripts/latest/latest.py)</onfocus>
+      <onfocus>RunScript(special://skin/scripts/xsplauncher/getxsp.py)</onfocus>
       <onfocus>SetFocus(300)</onfocus>
       <texturenofocus>-</texturenofocus>
       <texturefocus>-</texturefocus>
