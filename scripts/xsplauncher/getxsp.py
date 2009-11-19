@@ -36,7 +36,8 @@ class Main:
 	    count = count + 1
 	    localizedString = xbmc.getLocalizedString( int ( row[ 0 ] ) )
             self.WINDOW.setProperty( "XspLauncher.%d.StringId" % ( count ), localizedString )
-            self.WINDOW.setProperty( "XspLauncher.%d.XspPath" % ( count ), row[ 1 ] )
+            playlistLocation = "special://profile/playlists/" + row [ 1 ]
+            self.WINDOW.setProperty( "XspLauncher.%d.XspPath" % ( count ),  playlistLocation )
 
 if ( __name__ == "__main__" ):
     Main()
