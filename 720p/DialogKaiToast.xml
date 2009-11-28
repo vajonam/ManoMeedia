@@ -13,7 +13,7 @@
       <control type="image">
         <description>Panel background</description>
         <width>385</width>
-        <height>110</height>
+        <height>130</height>
         <include>OverlayArea</include>
       </control>
 
@@ -27,7 +27,7 @@
       
       <control type="label" id="401">
         <description>Caption</description>
-        <posy>25</posy>
+        <posy>15</posy>
         <width>280</width>
         <font>MediumTitleFont</font>
         <include>KaiDialogText</include>

@@ -620,8 +620,8 @@
   <include name="KaiDialogText">
     <posx>100</posx>
     <width>390</width>
-    <height>24</height>
-    <label>-</label>
+    <height>48</height>
+<label>-</label>
     <align>left</align>
     <aligny>center</aligny>
 	<wrapmultiline>true</wrapmultiline>
