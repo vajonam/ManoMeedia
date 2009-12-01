@@ -17,7 +17,7 @@
         <description>Panel background</description>
         <width>1220</width>
         <height>370</height>
-        <include>OverlayDarkArea</include>
+        <include>OverlayArea</include>
       </control>
 
       <control type="group">
@@ -47,6 +47,7 @@
             <align>left</align>
             <aligny>center</aligny>
             <font>SmallTitleFont</font>
+            <textcolor>Selected</textcolor>
             <info>Weather.Location</info>
           </control>
 
@@ -112,6 +113,7 @@
           <control type="label" id="31">
             <description>day label</description>
             <posx>20</posx>
+            <textcolor>Highlighted</textcolor>
             <include>WeatherDayTitle</include>
           </control>
 
@@ -253,7 +255,7 @@
             <control type="multiimage">
               <description>Animated current weather icon</description>
               <height>230</height>
-              <width>230</width>
+              <width>230</width>         
               <texture>-</texture>
               <imagepath>icon\$INFO[Weather.FanartCode]</imagepath>
 	      <timeperimage>100</timeperimage>
@@ -303,6 +305,7 @@
 
           <control type="label" id="41">
             <description>day label</description>
+            <textcolor>Highlighted</textcolor>
             <include>WeatherDayTitle</include>
           </control>
 
@@ -351,8 +354,8 @@
 
             <control type="image" id="55">
               <description>day icon</description>
-            <include>WeatherDayIcon</include>
-            <visible>!Skin.HasSetting(UseAnimatedWeather)</visible>
+              <include>WeatherDayIcon</include>
+              <visible>!Skin.HasSetting(UseAnimatedWeather)</visible>
             </control>
 
             <control type="multiimage">
@@ -369,6 +372,7 @@
 
             <control type="label" id="51">
               <description>day label</description>
+              <textcolor>Highlighted</textcolor>
               <include>WeatherDayTitle</include>
             </control>
 
@@ -435,6 +439,7 @@
 
               <control type="label" id="61">
                 <description>day label</description>
+                <textcolor>Highlighted</textcolor>
                 <include>WeatherDayTitle</include>
               </control>
 

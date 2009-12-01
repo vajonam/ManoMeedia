@@ -10,6 +10,14 @@
       <include>HomeBackgroundImage</include>
     </control>
 
+    <control type="visualisation">
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1280</width>
+      <height>720</height>
+      <visible>Player.HasAudio + !Skin.HasSetting(HideVisualisation)</visible>
+    </control>
+
     <include>DateAndTime</include>
 
     <control type="group">
@@ -59,7 +67,7 @@
         <width>HomeWeatherImageWidth</width>
         <height>HomeWeatherImageWidth</height>
         <aspectratio>keep</aspectratio>
-        <imagepath>$INFO[Skin.String(CustomWeatherBGFolder)]\icon\$INFO[Weather.FanartCode]</imagepath>
+        <imagepath>icon\$INFO[Weather.FanartCode]</imagepath>
         <timeperimage>100</timeperimage>
         <randomize>false</randomize>
         <fadetime>0</fadetime>
@@ -68,7 +76,6 @@
 
       <control type="group">
         <posy>7</posy>
-
 
         <control type="label">
           <font>SmallDefaultFont</font>
@@ -82,21 +89,22 @@
 
         <control type="label">
           <font>SmallDefaultFont</font>
-          <include>HomeWeatherFeelsLikeText</include>
-          <visible>!Skin.HasSetting(ShowLargerClock) + Skin.HasSetting(UseFeelsLikeTemp)</visible>
-        </control>
-        <control type="label">
-          <include>HomeWeatherFeelsLikeText</include>
-          <visible>Skin.HasSetting(ShowLargerClock) + Skin.HasSetting(UseFeelsLikeTemp)</visible>
-        </control>
-        <control type="label">
-          <font>SmallDefaultFont</font>
           <include>HomeWeatherTemperatureText</include>
           <visible>!Skin.HasSetting(ShowLargerClock) + !Skin.HasSetting(UseFeelsLikeTemp)</visible>
         </control>
         <control type="label">
           <include>HomeWeatherTemperatureText</include>
           <visible>Skin.HasSetting(ShowLargerClock)+ !Skin.HasSetting(UseFeelsLikeTemp) </visible>
+        </control>
+
+        <control type="label">
+          <font>SmallDefaultFont</font>
+          <include>HomeWeatherFeelsLikeText</include>
+          <visible>!Skin.HasSetting(ShowLargerClock) + Skin.HasSetting(UseFeelsLikeTemp)</visible>
+        </control>
+        <control type="label">
+          <include>HomeWeatherFeelsLikeText</include>
+          <visible>Skin.HasSetting(ShowLargerClock) + Skin.HasSetting(UseFeelsLikeTemp)</visible>
         </control>
 
       </control>
@@ -557,16 +565,16 @@
             <onclick>Skin.ToggleSetting(HideMusicNowPlayingInfo)</onclick>
 	      <visible>Player.HasAudio</visible>
           </item>
-	    <!-- item id="2">
+	    <item id="2">
             <description>Favorites Button</description>
             <label>$LOCALIZE[1036]</label>
             <onclick>XBMC.ActivateWindow(Favourites)</onclick>
-          </item -->
-          <!-- item id="3">
+          </item>
+          <item id="3">
             <description>Scripts Button</description>
             <label>$LOCALIZE[247]</label>
             <onclick>XBMC.ActivateWindow(20)</onclick>
-          </item -->      		                   
+          </item>      		                   
           <item id="4">
             <description>Video Plugins</description>
             <label>$LOCALIZE[1037]</label>

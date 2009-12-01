@@ -131,7 +131,7 @@
         <visible>Container.Content(movies)</visible>
         <visible>[IsEmpty(ListItem.Property(fanart_image)) + IsEmpty(Fanart.Image)] | Skin.HasSetting(HideMovieFanart)</visible>
         <visible>Skin.String(CustomMoviesBGFolder)</visible>
-        <include>BackgroundImage</include>
+        <include>BackgroundImage</include>       
       </control>
 
       <control type="multiimage">

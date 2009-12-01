@@ -17,7 +17,15 @@
         <posy>-20</posy>
         <width>570</width>
         <height>78</height>
-        <include>OverlayDarkArea</include>
+        <include>OverlayArea</include>
+      </control>
+
+      <control type="image">
+        <posx>-10</posx>
+        <posy>-20</posy>
+        <width>570</width>
+        <height>75</height>      
+        <texture flipy="true">Gradient.png</texture>
       </control>
 
       <control type="group">
@@ -138,9 +146,9 @@
 
 		<control type="group" id="200">
 		  <description>Player Controls</description>
-      <posx>490</posx>
-      <posy>592</posy>
-      <animation effect="slide" time="0" start="0,0" end="-30,-1" condition="Skin.HasSetting(UseMinimalVideoOSD)">Conditional</animation>
+      <posx>78</posx>
+      <posy>622</posy>
+      <animation effect="slide" time="0" start="0,0" end="382,-31" condition="Skin.HasSetting(UseMinimalVideoOSD)">Conditional</animation>
       <animation effect="slide" time="300" tween="circle" easing="out" start="0,200" end="0,0">WindowOpen</animation>
       <animation effect="slide" time="300" tween="circle" easing="out" start="0,200" end="0,0">Visible</animation>
       <animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="0,200">WindowClose</animation>

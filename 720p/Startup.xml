@@ -6,6 +6,23 @@
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
+                        <visible>![Skin.HasSetting(Use_Startup_Playlist) | Skin.HasSetting(HideStartup)]</visible> 
+			<animation effect="fade" delay="2000">Focus</animation>
+		</control>
+
+		<control type="button" id="10">
+			<onfocus>ReplaceWindow(Home)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+                        <visible>Skin.HasSetting(HideStartup)</visible> 
+		</control>
+
+		<control type="button" id="10">
+			<onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
+			<onfocus>ReplaceWindow(Home)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+                        <visible>Skin.HasSetting(Use_Startup_Playlist)</visible> 
 		</control>
 
 		<control type="button" id="1">
@@ -16,6 +33,50 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<animation effect="fade" time="1000">Focus</animation>
+		        <visible>![Skin.HasSetting(Use_Startup_Playlist) | Skin.HasSetting(HideStartup)]</visible>
+			<animation effect="fade" delay="2000">Focus</animation> 
+		</control>
+
+		<control type="button" id="1">
+			<description>ReplaceWindow Trigger</description>
+			<posx>35</posx>
+			<posy>235</posy>
+			<onfocus>ReplaceWindow(Home)</onfocus>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<animation effect="fade" time="1000">Focus</animation>
+		        <visible>Skin.HasSetting(HideStartup)</visible> 
+		</control>
+
+		<control type="button" id="1">
+			<description>ReplaceWindow Trigger</description>
+			<posx>35</posx>
+			<posy>235</posy>
+			<onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
+			<onfocus>ReplaceWindow(Home)</onfocus>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<animation effect="fade" time="1000">Focus</animation>
+		        <visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
+		</control>
+
+		<control type="group">
+		  <description>startup animation</description>
+		  <posx>90</posx>
+		  <posy>160</posy>
+                  <animation effect="fade" time="600" start="100" end="0">WindowClose</animation>
+
+		  <control type="image">
+		    <description>startup animation</description>
+ 	            <animation effect="fade" start="0" end="100" time="1800" tween="circle" easing="in" reversible="false">WindowOpen</animation>			
+		    <texture>MiniMeedia.png</texture>
+		  </control>
+						
+		  <control type="image">
+		    <description>startup animation Glow</description>
+		    <animation effect="fade" start="0" end="100"  time="200" reversible="true" delay="1800">WindowOpen</animation>
+		    <texture>MiniMeediaGlow.png</texture>			
+		  </control>
 		</control>
 	</controls>
 </window>

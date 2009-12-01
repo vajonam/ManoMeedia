@@ -253,11 +253,37 @@
 
           <control type="radiobutton" id="9">
             <description>Hide CdArt</description>
-            <label>Hide CdArt</label>
+            <label>$LOCALIZE[31205] CdArt</label>
             <onclick>Skin.ToggleSetting(HideCdArt)</onclick>
             <selected>Skin.HasSetting(HideCdArt)</selected>
             <include>SettingsOptionRadioButton</include>
           </control>
+
+          <control type="radiobutton" id="10">
+            <description>Hide Startup Window</description>
+            <label>$LOCALIZE[31205] $LOCALIZE[512]</label>
+            <onclick>Skin.ToggleSetting(HideStartup)</onclick>
+            <selected>Skin.HasSetting(HideStartup)</selected>
+            <include>SettingsOptionRadioButton</include>
+          </control>
+
+          <control type="radiobutton" id="11">
+            <description>Startup Playlist</description>
+            <label>$LOCALIZE[21398]</label>
+	    <onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
+	    <selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
+            <include>SettingsOptionRadioButton</include>
+          </control>
+
+          <control type="button" id="12">
+            <description>Startup Playlist Path</description>
+	    <label>$LOCALIZE[15311]</label>
+	    <label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
+	    <onclick>Skin.SetFile(Startup_Playlist_Path,.m3u,t:\playlists\music\)</onclick>				
+            <include>SettingsOptionRadioButton</include>
+            <enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
+          </control>
+
 
         </control>
 
@@ -407,6 +433,14 @@
           </control>
 
           <control type="radiobutton" id="2">
+            <description>Hide Animated Thumbnail in Video OSD</description>
+            <label>$LOCALIZE[31205] $LOCALIZE[31222] $LOCALIZE[21371] $LOCALIZE[1405] $LOCALIZE[444] $LOCALIZE[478]</label>
+            <onclick>Skin.ToggleSetting(HideAnimInVideoOSD)</onclick>
+            <selected>Skin.HasSetting(HideAnimInVideoOSD)</selected>
+            <include>SettingsOptionRadioButton</include>
+          </control>
+
+          <control type="radiobutton" id="3">
             <description>Show Minimal Video OSD</description>
             <label>$LOCALIZE[31218]</label>
             <onclick>Skin.ToggleSetting(UseMinimalVideoOSD)</onclick>
@@ -414,7 +448,16 @@
             <include>SettingsOptionRadioButton</include>
           </control>
 
-          <control type="radiobutton" id="3">
+          <control type="radiobutton" id="4">
+            <description>Animated Thumbnail in Minimal OSD</description>
+            <label>-  $LOCALIZE[31205] $LOCALIZE[31222] $LOCALIZE[21371]</label>
+            <onclick>Skin.ToggleSetting(ThumbVideoOSD)</onclick>
+            <selected>Skin.HasSetting(ThumbVideoOSD)</selected>
+            <include>SettingsOptionRadioButton</include>
+            <enable>Skin.HasSetting(UseMinimalVideoOSD)</enable>
+          </control>
+
+          <control type="radiobutton" id="5">
             <description>Hide Fanart</description>
             <label>$LOCALIZE[31205] $LOCALIZE[31302]</label>
             <onclick>Skin.ToggleSetting(HideVideoFanart)</onclick>
@@ -422,7 +465,7 @@
             <include>SettingsOptionRadioButton</include>
           </control>
 
-          <control type="togglebutton" id="4">
+          <control type="togglebutton" id="6">
             <description>Custom Videos BG Images Folder</description>
             <onclick>Skin.SetPath(CustomVideosBGFolder)</onclick>
             <altclick>Skin.Reset(CustomVideosBGFolder)</altclick>
@@ -432,7 +475,7 @@
             <include>SettingsOptionRadioButton</include>
           </control>
 
-          <control type="button" id="5">
+          <control type="button" id="7">
   	    <description>Set OpenSubtitles-OSD script Path</description>
   	    <label>$LOCALIZE[31306]</label>
   	    <onclick>Skin.SetFile(SubScriptPath,.py)</onclick>
@@ -494,7 +537,7 @@
 
           <control type="togglebutton" id="2">
             <description>Custom Movies BG Images Folder</description>
-            <onclick>Skin.SetPath(CustomMoviesBGFolder)</onclick>
+            <onclick>Skin.Setpath(CustomMoviesBGFolder)</onclick>
             <altclick>Skin.Reset(CustomMoviesBGFolder)</altclick>
             <label>$LOCALIZE[20141] $LOCALIZE[342] $LOCALIZE[31202]</label>
             <altlabel>$LOCALIZE[192] $LOCALIZE[342] $LOCALIZE[31202]</altlabel>
