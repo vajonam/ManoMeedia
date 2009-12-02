@@ -196,7 +196,8 @@
           <item id="6">
             <description>Update library</description>
             <label>$LOCALIZE[653]</label>
-            <onclick>UpdateLibrary(video)</onclick>
+            <!-- onclick>UpdateLibrary(video)</onclick -->
+            <onclick>RunScript(special://skin/scripts/latest/updatelatest.py)</onclick>
           </item>
 
             <item id="2">
