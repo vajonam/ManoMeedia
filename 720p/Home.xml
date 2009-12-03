@@ -467,7 +467,7 @@
             </item>
           </content>
         </control>
-  
+       
         <control type="wraplist" id="409">
           <description>Power Side Menu</description>
           <onup>409</onup>
@@ -522,6 +522,27 @@
             </item>
           </content>
         </control>
+ <control type="wraplist" id="410">
+          <description>DVD Side Menu</description>
+          <onup>408</onup>
+          <ondown>408</ondown>
+          <visible>Container(300).HasFocus(10)</visible>
+          <include>HomeSubmenuWrapList</include>
+  
+          <content>
+            <item id="1">
+              <description>Eject</description>
+              <label>Eject</label>
+              <onclick>EjectTray(300)</onclick>
+            </item>
+            <item id="1">
+              <description>Play</description>
+              <label>Play</label>
+              <onclick>XBMC.PlayDVD</onclick>
+            </item>
+          </content>
+        </control>
+  
       </control>
     </control>
 
@@ -1176,8 +1197,8 @@
       <description>RSS</description>
       <posx>350</posx>
       <posy>682</posy>
-      <animation effect="slide" time="300" tween="circle" easing="out" start="0,0" end="250,0" reversible="false" condition="[Control.HasFocus(401) | Control.HasFocus(402) | Control.HasFocus(403) | Control.HasFocus(404) | Control.HasFocus(405) | Control.HasFocus(406) | Control.HasFocus(407) | Control.HasFocus(408) | Control.HasFocus(409) | Control.HasFocus(501) | [Control.HasFocus(460) + !Container(401).HasFocus(10)] | [Control.HasFocus(461) + !Container(402).HasFocus(8)]]">Conditional</animation>
-      <animation effect="slide" time="200" tween="circle" easing="in" start="250,0" end="0,0" reversible="false" condition="![Control.HasFocus(401) | Control.HasFocus(402) | Control.HasFocus(403) | Control.HasFocus(404) | Control.HasFocus(405) | Control.HasFocus(406) | Control.HasFocus(407) | Control.HasFocus(408) | Control.HasFocus(409) | Control.HasFocus(501) | [Control.HasFocus(460) + !Container(401).HasFocus(10)] | [Control.HasFocus(461) + !Container(402).HasFocus(8)]]">Conditional</animation>
+      <animation effect="slide" time="300" tween="circle" easing="out" start="0,0" end="250,0" reversible="false" condition="[Control.HasFocus(401) | Control.HasFocus(402) | Control.HasFocus(403) | Control.HasFocus(404) | Control.HasFocus(405) | Control.HasFocus(406) | Control.HasFocus(407) | Control.HasFocus(408) | Control.HasFocus(409) |Control.HasFocus(410) |  Control.HasFocus(501) | [Control.HasFocus(460) + !Container(401).HasFocus(10)] | [Control.HasFocus(461) + !Container(402).HasFocus(8)]]">Conditional</animation>
+      <animation effect="slide" time="200" tween="circle" easing="in" start="250,0" end="0,0" reversible="false" condition="![Control.HasFocus(401) | Control.HasFocus(402) | Control.HasFocus(403) | Control.HasFocus(404) | Control.HasFocus(405) | Control.HasFocus(406) | Control.HasFocus(407) | Control.HasFocus(408) | Control.HasFocus(409) | Control.HasFocus(410) | Control.HasFocus(501) | [Control.HasFocus(460) + !Container(401).HasFocus(10)] | [Control.HasFocus(461) + !Container(402).HasFocus(8)]]">Conditional</animation>
       <animation effect="slide" time="300" tween="circle" easing="out" start="700,120" end="0,0">WindowOpen</animation>
       <animation effect="slide" time="300" tween="circle" easing="out" start="700,120" end="0,0">Visible</animation>
       <animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="700,120">WindowClose</animation>
