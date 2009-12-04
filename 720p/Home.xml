@@ -157,11 +157,6 @@
               <onclick>XBMC.ActivateWindow(24)</onclick>
             </item>
 -->
-            <item id="9">
-              <description>Settings Button</description>
-              <label>$LOCALIZE[5]</label>
-              <onclick>XBMC.ActivateWindow(17)</onclick>
-            </item>
             <item id="7">
               <description>Recently Added</description>
               <label>$LOCALIZE[31022]</label>
@@ -178,17 +173,20 @@
             <item id="3">
               	<description>English</description>
               	<label>$INFO[Window.Property(XspLauncher.1.StringId)]</label>
+		<textcolor>Selected</textcolor>
          	<onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.1.XspPath)],return)</onclick>
 	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.1.StringId))</visible>
 	  </item>
             <item id="4">
               <description>Tamil</description>
+		<textcolor>Selected</textcolor>
               	<label>$INFO[Window.Property(XspLauncher.2.StringId)]</label>
          	<onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.2.XspPath)],return)</onclick>
 	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.2.StringId))</visible>
             </item>
             <item id="5">
               <description>Hindi</description>
+		<textcolor>Selected</textcolor>
               	<label>$INFO[Window.Property(XspLauncher.3.StringId)]</label>
                <onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.3.XspPath)],return)</onclick>
 	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.3.StringId))</visible>
@@ -234,6 +232,7 @@
               <description>Video Plugins</description>
               <label>$LOCALIZE[1037]</label>
               <onclick>XBMC.ActivateWindow(MyVideoLibrary,plugins,return)</onclick>
+	      <visible>!Skin.HasSetting(HideMovies) + IsEmpty(Window.Property(XspLauncher.1.StringId))</visible>
             </item>
           </content>
         </control>
