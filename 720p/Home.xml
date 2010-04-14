@@ -208,9 +208,9 @@
             <item id="9">
               <description>Button</description>
 		<textcolor>Selected</textcolor>
-              	<label>$INFO[Window.Property(XspLauncher.5.StringId)]</label>
-               <onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.5.XspPath)],return)</onclick>
-	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.5.StringId))</visible>
+              	<label>$INFO[Window.Property(XspLauncher.6.StringId)]</label>
+               <onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.6.XspPath)],return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.6.StringId))</visible>
             </item>
           <item id="6">
             <description>Update library</description>
