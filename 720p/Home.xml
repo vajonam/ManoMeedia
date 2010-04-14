@@ -191,6 +191,27 @@
                <onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.3.XspPath)],return)</onclick>
 	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.3.StringId))</visible>
             </item>
+            <item id="7">
+              <description>Button</description>
+		<textcolor>Selected</textcolor>
+              	<label>$INFO[Window.Property(XspLauncher.4.StringId)]</label>
+               <onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.4.XspPath)],return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.4.StringId))</visible>
+            </item>
+            <item id="8">
+              <description>Button</description>
+		<textcolor>Selected</textcolor>
+              	<label>$INFO[Window.Property(XspLauncher.5.StringId)]</label>
+               <onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.5.XspPath)],return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.5.StringId))</visible>
+            </item>
+            <item id="9">
+              <description>Button</description>
+		<textcolor>Selected</textcolor>
+              	<label>$INFO[Window.Property(XspLauncher.5.StringId)]</label>
+               <onclick>XBMC.ActivateWindow(25,$INFO[Window.Property(XspLauncher.5.XspPath)],return)</onclick>
+	       <visible>!Skin.HasSetting(HideMovies) + !IsEmpty(Window.Property(XspLauncher.5.StringId))</visible>
+            </item>
           <item id="6">
             <description>Update library</description>
             <label>$LOCALIZE[653]</label>
